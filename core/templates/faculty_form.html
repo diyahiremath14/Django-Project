@@ -1,0 +1,9 @@
+<h2>Add Faculty</h2>
+<form method="post">
+  {% csrf_token %}
+  ID: <input type="number" name="fid" required><br>
+  Title: <input type="text" name="title" required><br>
+  Name: <input type="text" name="name" required><br>
+  Branch: <input type="text" name="branch" required><br>
+  <input type="submit" value="Submit">
+</form>

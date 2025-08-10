@@ -1,0 +1,9 @@
+<h2>Add Student CIE Marks</h2>
+<form method="post">
+  {% csrf_token %}
+  USN: <input type="text" name="usn" required><br>
+  Name: <input type="text" name="name" required><br>
+  Subject Code: <input type="text" name="subject_code" required><br>
+  CIE Marks: <input type="number" name="cie_marks" required><br>
+  <input type="submit" value="Submit">
+</form>

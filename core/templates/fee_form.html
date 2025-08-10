@@ -1,0 +1,9 @@
+<h2>Exam Fee Payment</h2>
+<form method="post">
+  {% csrf_token %}
+  Name: <input type="text" name="name" required><br>
+  USN: <input type="text" name="usn" required><br>
+  Semester: <input type="number" name="semester" required><br>
+  Fee Paid? <input type="checkbox" name="fee_paid"><br>
+  <input type="submit" value="Submit">
+</form>

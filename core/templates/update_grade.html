@@ -1,0 +1,7 @@
+<h2>Update Student Grade</h2>
+<form method="post">
+  {% csrf_token %}
+  Name: <input type="text" name="name" required><br>
+  New Grade: <input type="text" name="grade" maxlength="2" required><br>
+  <input type="submit" value="Update">
+</form>

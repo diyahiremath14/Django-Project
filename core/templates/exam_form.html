@@ -1,0 +1,8 @@
+<h2>Add Exam Student</h2>
+<form method="post">
+  {% csrf_token %}
+  Name: <input type="text" name="name" required><br>
+  USN: <input type="text" name="usn" required><br>
+  Grade: <input type="text" name="grade" maxlength="2" required><br>
+  <input type="submit" value="Submit">
+</form>

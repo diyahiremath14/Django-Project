@@ -1,0 +1,8 @@
+<h2>Students with CIE Marks &lt; 20</h2>
+<ul>
+  {% for student in students %}
+    <li>{{ student.name }} (USN: {{ student.usn }}) - CIE: {{ student.cie_marks }}</li>
+  {% empty %}
+    <li>No students found.</li>
+  {% endfor %}
+</ul>

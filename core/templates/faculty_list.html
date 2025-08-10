@@ -1,0 +1,10 @@
+<h2>CSE Professors</h2>
+<ul>
+  {% for f in faculty %}
+    <li>{{ f.name }} - {{ f.title }} ({{ f.branch }})</li>
+  {% empty %}
+    <li>No CSE professors found.</li>
+  {% endfor %}
+</ul>
+
+<a href="{% url 'home' %}">Back to Home</a>

@@ -1,0 +1,8 @@
+<h2>All Students and Grades</h2>
+<ul>
+  {% for student in students %}
+    <li>{{ student.name }} (USN: {{ student.usn }}) - Dept: {{ student.dept }} - Grade: {{ student.grade }}</li>
+  {% empty %}
+    <li>No students found.</li>
+  {% endfor %}
+</ul>

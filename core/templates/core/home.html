@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portal Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .nav-button {
+            display: block;
+            width: 300px;
+            margin: 10px auto;
+            padding: 12px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to Student Portal</h2>
+
+    <a href="{% url 'add_student' %}" class="nav-button">Add CIE Marks</a>
+    <a href="{% url 'cie_list' %}" class="nav-button">View Students (CIE < 20)</a>
+
+    <a href="{% url 'exam_fee_form' %}" class="nav-button">Submit Exam Fee</a>
+    <a href="{% url 'delete_unpaid' %}" class="nav-button">Delete Students Without Exam Fee</a>
+
+    <a href="{% url 'add_employee' %}" class="nav-button">Add Employee</a>
+    <a href="{% url 'high_salary' %}" class="nav-button">Employees with Salary > 50k</a>
+
+    <a href="{% url 'add_exam_student' %}" class="nav-button">Add Exam Grade</a>
+    <a href="{% url 'o_grade' %}" class="nav-button">View 'O' Grade Students</a>
+
+    <a href="{% url 'add_placement' %}" class="nav-button">Add Placement Info</a>
+    <a href="{% url 'amazon_placed' %}" class="nav-button">Students Placed in Amazon</a>
+
+    <a href="{% url 'add_faculty' %}" class="nav-button">Add Faculty</a>
+    <a href="{% url 'cse_professors' %}" class="nav-button">CSE Professors</a>
+
+    <a href="{% url 'update_grade' %}" class="nav-button">Update Student Grade</a>
+</body>
+</html>
